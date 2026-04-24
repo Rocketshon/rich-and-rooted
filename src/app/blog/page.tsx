@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getPublishedPostsMeta, getCategoryCounts, getAllPostsMeta } from "@/lib/blog";
+import { getPublishedPostsMeta, getCategoryCounts } from "@/lib/blog";
 import "./journal.css";
 
 export const metadata: Metadata = {
@@ -23,11 +23,9 @@ export default function JournalPage() {
   const counts = getCategoryCounts();
   const totalCount = published.length;
 
-  // Pick a post to feature in the "Reading preview" section.
-  // If no real articles exist yet, fall back to the sample draft (hard-coded slug)
-  // so the post-template design remains reachable for review.
-  const allPosts = getAllPostsMeta();
-  const previewPost = published[0] ?? allPosts.find((p) => p.slug === "sample") ?? null;
+  // Reading preview features the latest published article.
+  // When no articles exist yet, the section is skipped entirely.
+  const previewPost = published[0] ?? null;
 
   return (
     <main className="container">
@@ -172,18 +170,13 @@ export default function JournalPage() {
               </h2>
             </div>
             <div className="margin-note">
-              {totalCount === 0
-                ? "A preview of the post template. Click to read the sample."
-                : "A preview of the latest article."}
+              A preview of the latest article.
             </div>
           </div>
 
           <Link href={`/blog/${previewPost.slug}`} className="preview-article">
             <div>
-              <div className="art-cat">
-                {previewPost.category}
-                {previewPost.draft ? " · Sample" : ""}
-              </div>
+              <div className="art-cat">{previewPost.category}</div>
               <h3>{previewPost.title}</h3>
               <p className="art-excerpt">{previewPost.excerpt}</p>
               <div className="meta-row">
@@ -193,7 +186,7 @@ export default function JournalPage() {
                 <span>{formatDate(previewPost.date)}</span>
                 <span>{previewPost.readTime}</span>
                 <span style={{ color: "var(--bronze-dim)" }}>
-                  {totalCount === 0 ? "Read the sample →" : "Read the article →"}
+                  Read the article →
                 </span>
               </div>
             </div>
