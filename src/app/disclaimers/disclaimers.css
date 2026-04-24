@@ -1,0 +1,86 @@
+/* Disclaimers — ported from design_handoff/site/disclaimers.html inline <style> */
+
+.d-hero {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: end;
+}
+.d-hero h1 {
+  font-family: var(--serif); font-weight: 300;
+  font-size: clamp(56px, 8vw, 120px);
+  line-height: 0.92; letter-spacing: -0.025em; margin: 0;
+}
+.d-hero h1 em { font-style: italic; color: var(--bronze-dim); }
+.d-hero .meta {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-soft); text-align: right; line-height: 1.8;
+}
+
+.d-body {
+  padding: 60px 0 120px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.d-toc {
+  position: sticky; top: 96px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  line-height: 2;
+}
+.d-toc .label {
+  font-size: 10px; letter-spacing: 0.22em; color: var(--bronze-dim);
+  padding-bottom: 10px; border-bottom: 1px solid var(--rule); margin-bottom: 14px;
+}
+.d-toc a {
+  display: block; color: var(--ink-2); padding: 4px 0;
+  border-bottom: 1px dashed var(--rule);
+}
+.d-toc a:hover { color: var(--ink); }
+
+.d-section {
+  margin-bottom: 72px;
+  scroll-margin-top: 96px;
+}
+.d-section .num {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--bronze-dim); margin-bottom: 14px;
+}
+.d-section h2 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.05; letter-spacing: -0.015em; margin: 0 0 24px;
+}
+.d-section p, .d-section li {
+  font-family: var(--serif); font-weight: 350;
+  font-size: 18px; line-height: 1.65; color: var(--ink-2);
+  max-width: 64ch; margin: 0 0 18px;
+}
+.d-section strong { color: var(--ink); font-weight: 500; }
+.d-section ul { padding-left: 22px; }
+.d-section .rule { height: 1px; background: var(--rule); margin-top: 48px; }
+.d-section a { color: var(--bronze-dim); border-bottom: 1px solid var(--bronze); }
+.d-section a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+.effective {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  margin-bottom: 48px;
+}
+
+.d-footnote {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--ink-soft);
+}
+.d-footnote a { color: var(--bronze-dim); border-bottom: 1px solid var(--bronze); }
+
+@media (max-width: 900px) {
+  .d-hero, .d-body { grid-template-columns: 1fr; }
+  .d-toc { position: static; }
+  .d-hero .meta { text-align: left; }
+}
