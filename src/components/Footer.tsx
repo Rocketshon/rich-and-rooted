@@ -54,7 +54,7 @@ export default function Footer() {
           {[
             { href: "/about", label: "About" },
             { href: "/services", label: "Services" },
-            { href: "/community", label: "Community" },
+            { href: "/blog", label: "Journal" },
             { href: "/contact", label: "Contact" },
             { href: "/disclaimers", label: "Disclaimers" },
           ].map(link => (
