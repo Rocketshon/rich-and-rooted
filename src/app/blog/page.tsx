@@ -95,36 +95,6 @@ export default function JournalPage() {
           <div className="empty-right">
             <div className="card-stack">
               <div className="ghost-label">Preview · Card format</div>
-              <div className="ghost-card g1">
-                <div className="gc-cat">Coming soon</div>
-                <div className="gc-lines">
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                </div>
-                <div className="gc-foot">
-                  <span>—</span>
-                  <span>—</span>
-                </div>
-              </div>
-              <div className="ghost-card g2">
-                <div className="gc-cat">Coming soon</div>
-                <div className="gc-lines">
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                  <div className="ln" />
-                </div>
-                <div className="gc-foot">
-                  <span>—</span>
-                  <span>—</span>
-                </div>
-              </div>
               <div className="ghost-card g3">
                 <div className="gc-cat">Article · 001</div>
                 <div className="gc-lines">
