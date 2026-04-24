@@ -1,0 +1,176 @@
+/* Contact page — ported from design_handoff/site/contact.html inline <style> */
+
+.c-hero {
+  padding: 56px 0 40px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: end;
+  border-bottom: 1px solid var(--rule);
+}
+.c-hero h1 {
+  font-family: var(--serif); font-weight: 300;
+  font-size: clamp(56px, 8vw, 120px);
+  line-height: 0.92; letter-spacing: -0.025em; margin: 0;
+}
+.c-hero h1 em { font-style: italic; color: var(--bronze-dim); }
+.c-hero .meta {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-soft); text-align: right; line-height: 1.8;
+}
+
+.c-main {
+  padding: 72px 0;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.c-left h2 { margin-bottom: 18px; }
+.c-left .lede { margin-bottom: 28px; }
+.c-left .lede em { font-style: italic; color: var(--bronze-dim); }
+.c-left .h2 em { font-style: italic; color: var(--bronze-dim); }
+
+.chip-row {
+  display: flex; flex-direction: column; gap: 10px;
+  margin: 28px 0;
+}
+.c-chip {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  transition: background .15s, border-color .15s, color .15s;
+  cursor: pointer;
+  color: inherit;
+}
+.c-chip:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.c-chip .lbl {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--bronze-dim);
+}
+.c-chip:hover .lbl { color: var(--gold); }
+.c-chip .val {
+  font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: -0.005em;
+  margin-top: 4px;
+}
+.c-chip .arr {
+  font-family: var(--mono); font-size: 16px; color: var(--ink-soft);
+}
+.c-chip:hover .arr { color: var(--gold); }
+
+.response-note {
+  padding: 20px 24px;
+  background: var(--paper-2);
+  border-left: 2px solid var(--bronze);
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.5;
+  margin-top: 16px;
+}
+.response-note b { color: var(--ink); }
+
+/* Form */
+.c-form {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 40px;
+  position: relative;
+}
+.c-form .form-num {
+  position: absolute; top: 16px; right: 20px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; color: var(--ink-soft);
+}
+.c-form .form-head {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--bronze-dim);
+  margin-bottom: 8px;
+}
+.c-form h2 {
+  font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1.1; letter-spacing: -0.01em;
+  margin: 0 0 28px;
+}
+.c-form h2 em { font-style: italic; color: var(--bronze-dim); }
+.field { display: block; margin-bottom: 20px; }
+.field label {
+  display: flex; justify-content: space-between;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+.field label .opt { color: var(--bronze-dim); }
+.field input, .field textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink-soft);
+  padding: 10px 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ink);
+  transition: border-color .15s;
+}
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--bronze);
+}
+.field textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
+.form-submit {
+  margin-top: 12px;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  flex-wrap: wrap;
+}
+.form-submit .note {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}
+.form-submit .note a { color: var(--ink-2); border-bottom: 1px solid var(--bronze); }
+
+/* Identity card */
+.id-card {
+  margin: 60px 0 120px;
+  padding: 48px;
+  background: var(--ink);
+  color: var(--paper);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+}
+.id-card::before {
+  content: "APPLICANT-SIDE · EST. 2025";
+  position: absolute;
+  top: 16px; right: 20px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em;
+  color: var(--gold);
+}
+.id-logo {
+  width: 96px; height: 96px;
+  background: url("/logo-light.png") center/contain no-repeat;
+  filter: brightness(1.1) contrast(1.1);
+}
+.id-eyebrow {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em;
+  color: var(--gold); text-transform: uppercase; margin-bottom: 14px;
+}
+.id-brand {
+  font-family: var(--serif); font-weight: 300;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1; letter-spacing: -0.02em;
+}
+.id-brand .tag {
+  display: block;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-top: 12px;
+}
+.id-card .btn { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+.id-card .btn:hover { background: var(--paper); border-color: var(--paper); }
+
+@media (max-width: 900px) {
+  .c-hero, .c-main, .id-card { grid-template-columns: 1fr; }
+  .c-hero .meta { text-align: left; }
+  .id-card .id-logo { width: 72px; height: 72px; }
+}

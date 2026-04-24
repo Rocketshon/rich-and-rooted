@@ -21,8 +21,13 @@ export default function SiteFooter() {
                 <a href="mailto:rootedrichly@gmail.com">rootedrichly@gmail.com</a>
               </li>
               <li>
-                {/* TODO(linkedin): replace href="#" when LinkedIn URL is known */}
-                <a href="#">LinkedIn →</a>
+                <a
+                  href="https://www.linkedin.com/in/alecia-white-smith-ma-69927b27/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn →
+                </a>
               </li>
               <li>
                 <Link href="/contact">General Inquiries</Link>
