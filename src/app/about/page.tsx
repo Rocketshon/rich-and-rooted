@@ -9,7 +9,7 @@ const ABOUT_SHOT = "/headshot-portrait.jpeg";
 export const metadata: Metadata = {
   title: "About Alecia White-Smith",
   description:
-    "A decade in the underwriting room, now on your side of the desk. Alecia White-Smith, MBA — Founder of Rich & Rooted Consulting.",
+    "A decade in the underwriting room, now on your side of the desk. Alecia White-Smith — BBA (Finance), MA Communication — Founder of Rich & Rooted Consulting.",
 };
 
 export default function AboutPage() {
@@ -28,7 +28,7 @@ export default function AboutPage() {
           <br />
           Founder, Rich &amp; Rooted Consulting
           <br />
-          MBA · 10+ yrs Underwriting
+          BBA · MA · 10+ yrs Underwriting
           <br />
           Mount Clemens, MI
         </div>
@@ -79,13 +79,15 @@ export default function AboutPage() {
             to defend every line in it.
           </p>
 
-          <div className="sectionlabel">MBA &amp; Beyond</div>
+          <div className="sectionlabel">Education &amp; Beyond</div>
           <p>
-            Alecia holds an MBA in Business Administration. The consulting
-            practice extends naturally into small-business financing — SBA loan
-            packages, revenue projections, and the documentation framework most
-            first-time founders don&apos;t realize the bank is quietly grading
-            them on.
+            Alecia holds a Bachelor&apos;s in Business Administration with a
+            finance concentration, and a Master&apos;s in Communication. The
+            first anchors the technical side of the practice — loan criteria,
+            underwriting mechanics, and business-loan packaging for SBA and
+            small-business engagements. The second does quieter work: turning
+            lender requirements into plain language, helping applicants tell
+            their own file back to the people grading it.
           </p>
         </div>
       </section>
@@ -116,11 +118,13 @@ export default function AboutPage() {
           <div className="cred">
             <div className="num">i.</div>
             <div className="badge">Academic</div>
-            <h3>MBA — Business Administration</h3>
+            <h3>BBA (Finance) &amp; MA Communication</h3>
             <p>
-              Graduate study in strategy, finance, and operations. The
-              foundation for business-loan packaging and founder-focused
-              engagements.
+              Bachelor of Business Administration with a finance concentration
+              — the technical foundation for reading lender criteria,
+              underwriting, and business-loan packaging. A Master&apos;s in
+              Communication — the discipline of translating those requirements
+              into clear, applicant-side documentation.
             </p>
           </div>
           <div className="cred">
@@ -204,13 +208,16 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="tl-row">
-            <div className="tl-year">MBA conferred</div>
+            <div className="tl-year">Degrees conferred</div>
             <div className="tl-role">
-              Graduate Study · Business Administration
+              BBA (Finance) · MA Communication
             </div>
             <div className="tl-desc">
-              Strategy, corporate finance, and operations. Anchors the
-              practice&apos;s small-business and SBA engagements.
+              Bachelor of Business Administration with a finance concentration,
+              followed by a Master&apos;s in Communication. The technical
+              foundation for SBA and small-business engagements, paired with
+              the discipline of translating lender requirements into clear
+              applicant-side language.
             </div>
           </div>
           <div className="tl-row">

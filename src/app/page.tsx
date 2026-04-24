@@ -47,7 +47,7 @@ export default function HomePage() {
               />
             </div>
             <div className="portrait-caption">
-              <span>Alecia White-Smith, MBA</span>
+              <span>Alecia White-Smith, BBA · MA</span>
               <span>Founder · Underwriter-in-Residence</span>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function HomePage() {
             <div className="lbl">Applications reviewed</div>
           </div>
           <div className="stat">
-            <div className="num">MBA</div>
-            <div className="lbl">Business strategy</div>
+            <div className="num">BBA</div>
+            <div className="lbl">Finance concentration</div>
           </div>
         </div>
       </section>
